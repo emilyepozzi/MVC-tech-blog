@@ -1,23 +1,17 @@
-// set up ======================================================================
-var express = require('express');
-var app = express();
-var bodyParser = require('body-parser');
+const express = require('express');
+const routes =require('./controllers');
+const sequelize = require('./config/connection')
+const path = require('path');
 
-// configuration ===============================================================
-app.use(bodyParser());
+const helpers = require('/utils/helpers');
 
-var port = process.env.PORT || 8000;
+const exphbs = require('express-handlebars');
+const hbs = exphbs.create({ helpers });
 
-var mongoose = require('mongoose');
-var database = require('./config/database');
-mongoose.connect(database.url);
-var Video = require('./app/models/video');
+const session = require(express-session);
 
-// routes =======================================================================
-app.use('/api', require('./app/routes/routes').router);
+const app = express();
+const PORT = process.env.PORT || 3001;
 
-// listen (start app with node server.js) ======================================
-app.listen(port);
-console.log("ready captain, on deck" + port);
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
-module.exports = app;

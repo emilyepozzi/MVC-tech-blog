@@ -1,0 +1,25 @@
+{
+  "name": "mvc-tech-blog",
+  "version": "1.0.0",
+  "description": "mvc",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilyepozzi/MVC-tech-blog.git"
+  },
+  "author": "emily",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilyepozzi/MVC-tech-blog/issues"
+  },
+  "homepage": "https://github.com/emilyepozzi/MVC-tech-blog#readme"
+}

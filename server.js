@@ -15,3 +15,32 @@ const PORT = process.env.PORT || 3001;
 
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
+const sess = {
+    secret: 'bigbluedog',
+    cookie: {
+        //session expires in 10 min
+        expires: 10 * 60 * 1000
+    },
+    resave: true,
+    rolling: true,
+    saveUninitialized: true,
+    store: new SequelizeStore({
+        db: sequelize
+    }),
+};
+
+app.use(session(sess));
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(_dirname, 'public')));
+
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
+
+app.use(routes);
+
+//turn connection to db and server
+sequelize.sync({ force: false }).then(() => {
+    app.listen(PORT, () => console.log('Now listening'));
+});

@@ -33,7 +33,7 @@ User.init(
             type: DataTypes.STRING,
             allowNull: true
         },
-        //email
+        email: {
         type: DataTypes.STRING,
         allowNull: false,
         unique: true,

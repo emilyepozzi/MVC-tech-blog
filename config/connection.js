@@ -5,6 +5,7 @@ require('dotenv').config();
 
 // Create connection to our database, pass in your MySQL info for username and pw
 let sequelize;
+
 if (process.env.JAWSDB_URL) {
     sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {

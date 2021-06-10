@@ -2,16 +2,16 @@ const {format_date} = require('../utils/helpers');
 
 //creating a test for format date takes data objects and returns dates in MM/DD/YYYY
 test('format_date() returns a date string', () => {
-    const date = new date('2020-033-20 16:12:03');
+    const date = new date('2021-06-09 16:12:03');
 
-    expect(format_date(date)).toBe('3/20/2020');
+    expect(format_date(date)).toBe('6/09/2021');
 });
 
 const {format_plural} = require('../utils/helpers')
 
 // plural point and comments
 test('format_plural() returns a pluralized word', () => {
-      const plural = format_plural('tiger', 2);
+      const plural = format_plural('tigers', 2);
       const single = format_plural('lion', 1);
       
       expect(plural).toBe('tigers');

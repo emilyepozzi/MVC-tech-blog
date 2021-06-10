@@ -14,7 +14,7 @@ Post.init(
             autoIncrement: true
         },
         title: {
-            type: DataTypes.string,
+            type: DataTypes.STRING,
             allowNull: false
         },
         post_content: {

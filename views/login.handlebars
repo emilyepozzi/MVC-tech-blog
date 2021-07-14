@@ -1,6 +1,6 @@
 <div class="column">
     <h2 class="title pb-4">login:</h2><hr>
-<form class="login-form">
+<form class="login-form" onsubmit="event.preventDefault();">
     <div>
         <label for="email-login">email:</label>
         <input type="text" id="email-login" />
@@ -11,7 +11,7 @@
     </div>
     <div>
         <button type="submit" class="button is-primary">login</button>
-        <a href="/signup"><button type="button is-danger">signup</button></a>
+        <button type="button is-danger" onclick='location.href="/signup";'>signup</button>
     </div>
 </form>
 </div>

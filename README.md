@@ -1,10 +1,19 @@
-## MVC-tech-blog
+## MVC Tech Blog
 
-### Description 
-* A mysql database and CMS-style Blog built using Model View Controller (MVC). Built using MySQL2, Express, Sequelize, Bulma, Handlbars and dotenv
+### Project Description 
+* This project uses a Model View Controller (MVC) paradigm to create a blog style website where developers can create an account, edit their information, make posts, edit posts, and comment on other users posts. 
 
-### Applcation Deployment
-https://github.com/priyaravi23/mvc-tech-blog/blob/master/server.js
+## Technologies Used to create this project
+- JavaScript
+- Node.js
+- dotenv
+- Express.js
+- MySQL
+- Sequelize
+- bcrypt
+- Handlebars
+- Heroku
+
 
 ### User Story
 ```

@@ -1,7 +1,7 @@
 ## MVC Tech Blog
 
 ### Project Description 
-* This project uses a Model View Controller (MVC) paradigm to create a blog style website where developers can create an account, edit their information, make posts, edit posts, and comment on other users posts. 
+This project uses a Model View Controller (MVC) paradigm to create a blog style website where developers can create an account, edit their information, make posts, edit posts, and comment on other users posts. 
 
 ## Technologies Used to create this project
 - JavaScript
@@ -24,7 +24,7 @@
 AS A developer who writes about tech
 I WANT a CMS-style blog site
 SO THAT I can publish articles, blog posts, and my thoughts and opinions
-
+```
 
 ### Acceptance Criteria
 ```
@@ -61,3 +61,4 @@ WHEN I click on the logout option in the navigation
 THEN I am signed out of the site
 WHEN I am idle on the site for more than a set time
 THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
+```

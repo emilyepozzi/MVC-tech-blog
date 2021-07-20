@@ -1,3 +1,4 @@
+
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
@@ -13,7 +14,8 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const sess = {
     secret: 'bigbluedog',
     cookie: {
-        //session expires in 10 min
+
+        
         expires: 10 * 60 * 1000
     },
     resave: true,
@@ -41,3 +43,5 @@ app.use(require('./controllers/'));
 sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => console.log('Now listening'));
 });
+
+

@@ -14,6 +14,11 @@ This project uses a Model View Controller (MVC) paradigm to create a blog style 
 - Handlebars
 - Heroku
 
+### Contributors
+- Andy Mendez.. The best TA in the entire world. I owe him my passing grades in this class.
+- [Joe Young](https://github.com/JYoung32) My tutor and my mentor on this struggle bus we call code. 
+- Priya Ravi
+
 ## Screenshots
 ![Screenshot1](./screenshot1.png)
 ![Screenshot2](./screenshot2.png)

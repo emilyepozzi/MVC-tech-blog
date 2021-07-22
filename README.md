@@ -15,9 +15,9 @@ This project uses a Model View Controller (MVC) paradigm to create a blog style 
 - Heroku
 
 ## Screenshots
-
-## Links
-[]()
+![Screenshot1](./screenshot1.png)
+![Screenshot2](./screenshot2.png)
+![Screenshot3](./screenshot3.png)
 
 ### User Story
 ```
